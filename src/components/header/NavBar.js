@@ -6,10 +6,10 @@ const NavBar = () => {
         <nav className={style.nav}>
             <a href="/" className="site-title">MineNostalgia</a>
             <ul className={ style.navButtons }>
-                <ButtonNav href="/Home">Home</ButtonNav>
-                <ButtonNav href="/History">History</ButtonNav>
-                <ButtonNav href="/Stats">Stats</ButtonNav>
-                <ButtonNav href="/Medals">Medals</ButtonNav>
+                <ButtonNav href="/">Home</ButtonNav>
+                <ButtonNav href="/history">History</ButtonNav>
+                <ButtonNav href="/stats">Stats</ButtonNav>
+                <ButtonNav href="/medals">Medals</ButtonNav>
             </ul>
             <a href="/Login" className="login">Log In</a>
         </nav>
