@@ -9,11 +9,37 @@
 
 .cloud1 {
   margin-left: 10vh;
+  animation: move-cloud1 2s linear;
 }
 
 .cloud2 {
   margin-right: 10vh;
   right: 0;
+  animation: move-cloud2 2s linear;
+}
+
+@keyframes move-cloud1 {
+  0% {
+    margin-left: -5vh;
+  }
+  50% {
+    margin-left: 11vh;
+  }
+  100% {
+    margin-left: 10vh;
+  }
+}
+
+@keyframes move-cloud2 {
+  0% {
+    margin-right: -5vh;
+  }
+  50% {
+    margin-right: 11vh;
+  }
+  100% {
+    margin-right: 10vh;
+  }
 }
 
 .content {
