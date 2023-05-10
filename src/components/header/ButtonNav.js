@@ -1,10 +1,10 @@
-
+import { Link } from "react-router-dom";
 
 const ButtonNav = (props) => {
 
     return (
       <li>
-          <a href={props.href}>{props.children}</a>
+          <Link to={props.to}>{props.children}</Link>
       </li>
     )
 };

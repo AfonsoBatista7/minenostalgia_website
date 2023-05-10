@@ -1,17 +1,18 @@
 import style from "./navbar.module.css";
 import ButtonNav from "./ButtonNav";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
     return (
         <nav className={style.nav}>
-            <a href="/" className="site-title">MineNostalgia</a>
+            <Link to="/" className="site-title">MineNostalgia</Link>
             <ul className={ style.navButtons }>
-                <ButtonNav href="/">Home</ButtonNav>
-                <ButtonNav href="/history">History</ButtonNav>
-                <ButtonNav href="/stats">Stats</ButtonNav>
-                <ButtonNav href="/medals">Medals</ButtonNav>
+                <ButtonNav to="/">Home</ButtonNav>
+                <ButtonNav to="/history">History</ButtonNav>
+                <ButtonNav to="/stats">Stats</ButtonNav>
+                <ButtonNav to="/medals">Medals</ButtonNav>
             </ul>
-            <a href="/Login" className="login">Log In</a>
+            <Link to="/Login" className="login">Log In</Link>
         </nav>
     )
 };
