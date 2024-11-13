@@ -28,6 +28,6 @@ const PlayerStatsSchema = new mongoose.Schema({
     link: String
 });
 
-const model = mongoose.model("serverStats", PlayerStatsSchema);
+const PlayerStats = mongoose.model("serverStats", PlayerStatsSchema);
 
-module.exports = model;
+module.exports = PlayerStats;
