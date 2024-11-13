@@ -1,12 +1,13 @@
 import PlayerStats from "./PlayerStats";
 import ServerStats from "./ServerStats";
 
-const StatsBox = () => {
+const StatsBox = ({ playerName }) => {
+
 
     return (
         <div className="stats-box">
             <ServerStats/>
-            <PlayerStats/>
+            {playerName!=null && <PlayerStats playerName={playerName}/>}
         </div>
     )
 };
