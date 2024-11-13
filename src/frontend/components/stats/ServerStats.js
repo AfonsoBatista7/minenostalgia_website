@@ -2,13 +2,13 @@ import { useEffect, useState } from 'react';
 const mcs = require('node-mcstatus');
 
 //Put this info on .env file
-const ip = 'mc.hypixel.net';
+const ip = 'mn.mobren.net';
 const port = 25565;
 const options = {
     query: true,
 };
 
-const StatsBox = () => {
+const ServerStats = () => {
 
     const [response, setResponse] = useState({});
     useEffect(() => {
@@ -23,7 +23,7 @@ const StatsBox = () => {
     }, []);
 
     return (
-        <div className="stats-box">
+        <div className="server-stats">
             <h3>Server Status</h3>
             <p>Server IP: {ip}</p>
             <p>Number Online Players: {Object.keys(response).length!=0 && response.players.online}</p>
@@ -33,4 +33,4 @@ const StatsBox = () => {
     )
 };
 
-export default StatsBox;
+export default ServerStats;
